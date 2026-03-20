@@ -172,6 +172,8 @@ That makes it an observation agent, not just a query interface.
 
 ## Reproducibility
 
+See mock-data/watch_rule.example.json and mock-data/alert_result.triggered.json for sample outputs.
+
 This repository is designed to be easy to reproduce.
 
 It includes:
