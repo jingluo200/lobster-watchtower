@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AlertResult",
+  "type": "object",
+  "properties": {
+    "alert_id": { "type": "string" },
+    "rule_id": { "type": "string" },
+    "watch_target": { "type": "string" },
+    "event_type": { "type": "string" },
+    "observed_amount": { "type": "number" },
+    "threshold": { "type": "number" },
+    "window": { "type": "string" },
+    "alert_triggered": { "type": "boolean" },
+    "sent_to": { "type": "string" },
+    "timestamp": { "type": "string" }
+  },
+  "required": [
+    "alert_id",
+    "rule_id",
+    "watch_target",
+    "event_type",
+    "observed_amount",
+    "threshold",
+    "window",
+    "alert_triggered",
+    "sent_to",
+    "timestamp"
+  ]
+}
