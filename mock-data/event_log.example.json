@@ -1,0 +1,10 @@
+{
+  "log_id": "event_log_001",
+  "rule_id": "watch_rule_001",
+  "watch_target": "btc_whale_wallet_001",
+  "event_type": "outflow",
+  "observed_amount": 742,
+  "threshold": 500,
+  "decision": "ALERT_TRIGGERED",
+  "timestamp": "2026-03-20T12:10:00Z"
+}
