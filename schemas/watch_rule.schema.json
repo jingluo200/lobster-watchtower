@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WatchRule",
+  "type": "object",
+  "properties": {
+    "rule_id": {
+      "type": "string"
+    },
+    "watch_target": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "string"
+    },
+    "time_window": {
+      "type": "string"
+    },
+    "trigger_threshold": {
+      "type": "number"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "notification_channel": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "rule_id",
+    "watch_target",
+    "asset",
+    "time_window",
+    "trigger_threshold",
+    "event_type",
+    "notification_channel",
+    "status",
+    "created_at"
+  ]
+}
