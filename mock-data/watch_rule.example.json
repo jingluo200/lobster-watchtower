@@ -1,0 +1,11 @@
+{
+  "rule_id": "watch_rule_001",
+  "watch_target": "btc_whale_wallet_001",
+  "asset": "BTC",
+  "time_window": "24h",
+  "trigger_threshold": 500,
+  "event_type": "outflow",
+  "notification_channel": "telegram",
+  "status": "active",
+  "created_at": "2026-03-20T10:00:00Z"
+}
