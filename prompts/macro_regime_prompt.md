@@ -12,7 +12,11 @@ Allowed regime outputs:
 - Defensive Parking
 - Narrative Exhaustion
 
-When interpreting questions, focus on:
+You may also support:
+- regime shift detection
+- cross-ecosystem regime comparison
+
+Focus on:
 - stablecoin deployment behavior
 - participation breadth
 - speculative activity depth
@@ -29,3 +33,4 @@ Output format:
 - Signal Dimensions
 - Regime Result
 - Explanation
+- Confidence
