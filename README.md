@@ -80,7 +80,25 @@ Users can ask questions like:
 4. The internal regime engine maps signal bundles into readable states
 5. A concise report is returned with explanation and confidence
 
----
+### Full Execution Loop
+
+```mermaid
+graph TD
+    A[User / Cron Job] -->|Macro Query| B(Claw Intent Parsing)
+    B -->|Task Structuring| C{OKX Onchain OS API}
+    
+    C -->|Fetch TVL/Stablecoin Data| D[Lobster/GPT-5.4 Classification]
+    D -->|Confidence > 0.8| E[[Regime: Defensive Parking]]
+    
+    E -->|1. Human Readable| F(Terminal Insight Report)
+    E -->|2. Autonomous Action| G[OKX Agent Trade Kit -> Auto Swap to USDC]
+    E -->|3. Onchain Primitive| H[(MacroRegimeOracle.sol on X Layer)]
+
+    classDef core fill:#000,stroke:#00ff66,stroke-width:2px,color:#00ff66;
+    classDef safe fill:#0b1021,stroke:#00aaff,stroke-width:1px,color:#fff;
+    class A,B,C,D,F safe;
+    class E,G,H core;
+```
 
 ## Why This Project
 
