@@ -52,7 +52,13 @@ Examples:
 This makes it more than a single-point classifier.  
 It becomes a macro reading layer for comparing how different onchain environments evolve.
 
----
+### 4. Automated Regime-Based Execution (Trade Kit Integration)
+Macro Regime Mapper is not just a read-only tool—it acts as an automated actuator. 
+By integrating the **OKX Agent Trade Kit**, the system can trigger protective mechanisms automatically. For example, if `Defensive Parking` is detected with a confidence score > 0.85, the Agent can construct a risk-off Swap routing on the fly (e.g., swapping tail-risk assets into USDC), achieving a millisecond-level closed loop from "macro perception" to "asset deployment."
+
+### 5. The "Macro Oracle" Primitive (X Layer)
+We serve smart contracts, not just human traders. The system pushes periodic Regime classifications (e.g., `uint8 regimeType`) directly onto X Layer as an "Onchain Macro Oracle." 
+Future DeFi lending protocols and yield aggregators can read this oracle to achieve "Macro Autopilot" (e.g., automatically raising liquidation thresholds during a `Narrative Exhaustion` regime to protect the protocol).
 
 ## Example Questions
 
@@ -118,7 +124,11 @@ Macro Regime Mapper aims to provide that missing interpretation layer.
 
 - **Report Formatter**  
   Returns concise human-readable outputs with confidence
+- **OKX Agent Trade Kit Executor (Action Layer)**
+  Executes automated asset rebalancing (e.g., swapping to stablecoins) when highly confident defensive regimes are triggered.
 
+- **MacroRegimeOracle.sol (Onchain Primitive)**
+  A smart contract deployed on X Layer that stores the latest regime state, acting as a public macro oracle for other DeFi protocols.
 ---
 
 ## Repository Structure
